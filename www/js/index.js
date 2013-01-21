@@ -18,6 +18,7 @@
  */
 var app = {
     initialize: function() {
+		alert("a");
         this.bind();
     },
     bind: function() {
