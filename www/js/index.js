@@ -22,16 +22,12 @@ var app = {
         this.bind();
     },
     bind: function() {
-		alert(window.device.uuid);
         document.addEventListener('deviceready', this.deviceready, false);
     },
     deviceready: function() {
-        alert('deviceready');
-        // This is an event handler function, which means the scope is the event.
-        // So, we must explicitly called `app.report()` instead of `this.report()`.
-        app.report('deviceready');
+        app.report();
     },
-    report: function(id) {
+    report: function() {
         alert(window.device.uuid);
     }
 };
