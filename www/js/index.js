@@ -18,7 +18,7 @@
  */
 var app = {
     initialize: function() {
-		alert("a");
+		//alert("a");
         this.bind();
     },
     bind: function() {
@@ -40,6 +40,6 @@ var app = {
         var completeElem = document.querySelector('#' + id + ' .complete');
         completeElem.className = completeElem.className.split('hide').join('');
 
-        //alert(window.device.uuid);
+        alert(window.device.uuid);
     }
 };
