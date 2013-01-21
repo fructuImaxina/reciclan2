@@ -22,7 +22,7 @@ var app = {
         this.bind();
     },
     bind: function() {
-        alert('bind');
+		alert(window.device.uuid);
         document.addEventListener('deviceready', this.deviceready, false);
     },
     deviceready: function() {
