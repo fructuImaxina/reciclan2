@@ -20,6 +20,7 @@
         </script>
     </head>
     <body>
+    <?php header("Location: http://www.reciclandocontigo.com/");
         <!-- Inicio -->
 
         <div data-role="page" data-theme="a" id="inicio">
